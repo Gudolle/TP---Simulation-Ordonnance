@@ -8,15 +8,42 @@ namespace TP_SimulationOrdonnance
 {
     class Tache
     {
+
+        /// <summary>
+        /// Nom de la tâche
+        /// </summary>
         public string Nom { get; set; }
+        /// <summary>
+        /// Durée de la table
+        /// </summary>
         public int Ci { get; set; }
+        /// <summary>
+        /// Deadline de la tache
+        /// </summary>
         public int Di { get; set; }
+        /// <summary>
+        /// Période
+        /// </summary>
         public int Pi { get; set; }
 
+        /// <summary>
+        /// Si effectué
+        /// </summary>
         public Boolean Effectuer { get; set; }
+
+        /// <summary>
+        /// Nombre de fois effecuter
+        /// </summary>
         private int Nombre { get; set; }
 
+        /// <summary>
+        /// Temps d'execution
+        /// </summary>
         public int TimeExecute { get; set; }
+
+        /// <summary>
+        /// DeadLine calculé
+        /// </summary>
         public int DeadLine { get; set; }
 
         public Tache(string _nom, int _Ci, int _Di, int _Pi)
